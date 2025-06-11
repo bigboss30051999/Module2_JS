@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1. Khai báo mảng
+    let mang = [11, 27, 33, 43, 15, 18, 20];
+    //2.Tính tổng các phần tử có giá trị lẻ trong mảng
+    let tong=0
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i]%2!==0) {
+            tong+=mang[i]
+        }
+    }
+    document.write(tong);
+    //3.Tính trung bình các phần tử chia hết cho 3 trong mảng
+    let tong = 0;
+    let dem=0
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] % 3 == 0) {
+            tong += mang[i];
+            dem++;
+        }
+    }
+    if (dem > 0){
+        let tbc = tong / dem;
+        alert('Trung bình cộng của các phần tử chia hết cho 3 là' + tbc)
+    } else {
+        alert(`Không có phần tử nào chia hết cho 3 trong mảng`
+        );
+    }
+    //4.In ra các phần tử trong mảng mà phần tử đó lớn hơn giá trị phần tử trước đó
+    for (let i = 1; i < mang.length; i++) {
+        if (mang[i] > mang[i - 1]) {
+            document.write("mang[" + i + "] = " + mang[i]+'<br>');
+        }
+    }
+    //5.So sánh tổng phần tử có giá trị chẵn và lẻ của mảng
+    let tongchan = 0;
+    let tongle = 0;
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] % 2 == 0) {
+            tongchan += mang[i];
+        } else {
+            tongle += mang[i];
+        }
+    }
+    document.write('Tổng các phần tử chẵn là:' +tongchan+'<br>')
+    document.write('Tổng các phần tử lẻ là:' +tongle+'<br>')
+    if (tongchan > tongle) {
+        document.write('Tổng các phần tử chẵn lớn hơn tổng các phần tử lẻ')
+    }
+    if (tongchan === tongle) {
+        document.write('Tổng các phần tử chẵn bẳng tổng các phần tử lẻ')
+    }
+    if (tongchan < tongle) {
+        document.write('Tổng các phần tử chẵn bé hơn tổng các phần tử lẻ')
+    }
+
+
+
+</script>
+</body>
+</html>

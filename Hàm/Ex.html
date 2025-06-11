@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function daoNguocMang(arr) {
+        let ketQua = [];
+        for (let i = arr.length - 1; i >= 0; i--) {
+            ketQua.push(arr[i]);
+        }
+        return ketQua;
+    }
+
+    let mang = [1, 2, 3];
+    document.write(daoNguocMang(mang));
+</script>
+</body>
+</html>

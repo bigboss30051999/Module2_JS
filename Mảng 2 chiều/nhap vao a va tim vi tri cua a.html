@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr2 = [
+    [1, 2, 3, 4, 5, 6],
+    [32, 22, 42],
+    [7, 8, 9, 10]
+  ]
+  let a=+prompt('Nhập vào phần tử a cần tìm:')
+  let vitri1=-1
+  let vitri2=-1
+  for (let i=0;i<arr2.length;i++){
+    for (let j=0;j<arr2[i].length;j++)
+    if (arr2[i][j]===a){
+      vitri1=i
+      vitri2=j
+      break;
+    }
+  }
+  document.write('Phần tử cần tìm nằm ở vị trí thứ: '+vitri1+','+vitri2)
+</script>
+</body>
+</html>

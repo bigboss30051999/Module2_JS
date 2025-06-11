@@ -4,7 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81b99712-c8ef-4812-b7da-b9aa26375b10" name="Changes" comment="" />
+    <list default="true" id="81b99712-c8ef-4812-b7da-b9aa26375b10" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/dem so lan xuat hien cac phan tư trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/in ra phan tu xuat hien 1 lan trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/kiểm tra mang tang dan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/kiểm tra mảng a có trong mảng b không.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/liệt kê các vị trí có giá trị âm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/nhap 3 so a,b,c. In ra các số 3 chữ số.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/tìm max thứ 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/tìm tích lớn nhất của 2 số trong mảng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài kiểm tra thử/dsdiemthi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài kiểm tra thử/hinhchunhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài kiểm tra thử/nhap x tinh tong so nguyen to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/(in bảng cửu chương for lồng).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/Tính TBC các số chia hết cho 6 từ a đến b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/baitoanchiabanhchung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/baitoanghepdoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/code hình sao tam giác.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/in ra các số từ 1 đến 100.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/in ra so chinh phuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/nhap 2 so N va S.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/tam giác tăng dần theo chiều ngang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/tinh giai thua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/tinh tong binh phuong 2 so.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/tong 30 so chia het cho 7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giao diện/Tudien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giao diện/game.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giao diện/maytinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hàm/Ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/Ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/nhap n phan tu vao mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/nhapvatimsophantutrongmang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/tim va xoa phan tu trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 2 chiều/nhap vao a va tim vi tri cua a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 2 chiều/tinh tong duong cheo chinh của ma tran.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 2 chiều/tính tích đường chéo phụ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/Dientichhinhtron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quản Lý Sản Phẩm/QLSP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Số Nguyên Tố và fibonacy/in dãy fibonacy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Số Nguyên Tố và fibonacy/in ra dãy số nguyên tố.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Số Nguyên Tố và fibonacy/kiem tra so nguyen to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP/DientichvachuviHCN.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/DientichvachuviHCN.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +67,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -32,26 +80,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.nhap n phan tu vao mang.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.nhap n phan tu vao mang.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;repository&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Huynh Vinh Xuyen\WebstormProjects\JS\Giao diện" />
@@ -99,7 +152,10 @@
       <workItem from="1749209911971" duration="6294000" />
       <workItem from="1749468846600" duration="4415000" />
       <workItem from="1749473863893" duration="4201000" />
-      <workItem from="1749641487106" duration="6976000" />
+      <workItem from="1749641487106" duration="7514000" />
+      <workItem from="1749649912481" duration="149000" />
+      <workItem from="1749650070744" duration="78000" />
+      <workItem from="1749650176159" duration="121000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item {
+            border: 1px solid blue;
+            width: 250px;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .nameSP {
+            display: inline-block;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="name">
+<button onclick="taoMoi()">Add</button>
+<div id="sl"></div>
+<div id="list"></div>
+<div id="edit"></div>
+<script>
+    let dssp = ['IP15', 'IP16', 'S23', 'S24', 'S25'];
+
+    hienThi();
+
+    function hienThi() {
+        let str = '';
+        for (let i = 0; i < dssp.length; i++) {
+            str += `<div class="item">
+                    <span class="nameSP">${dssp[i]}</span>
+                    <button onclick="suaSP(${i})">Edit</button>
+                    <button onclick="xoaSP(${i})">Delete</button>
+                </div>`
+        }
+        document.getElementById('list').innerHTML = str;
+        document.getElementById('sl').innerHTML = dssp.length + ' sản phẩm';
+    }
+
+    function taoMoi() {
+        let newName = document.getElementById('name').value;
+        dssp.push(newName);
+        hienThi()
+    }
+
+    function xoaSP(viTri) {
+        dssp.splice(viTri, 1);
+        hienThi()
+    }
+
+    function suaSP(viTri) {
+        document.getElementById('edit').innerHTML = `
+            <input type="text" id="editName" value="${dssp[viTri]}">
+            <button onclick="luu(${viTri})">Lưu</button>
+        `;
+    }
+
+    function luu(viTri) {
+        let newName = document.getElementById('editName').value;
+        dssp[viTri] = newName;
+        hienThi();
+        document.getElementById('edit').innerHTML = ''
+    }
+</script>
+</body>
+</html>

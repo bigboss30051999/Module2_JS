@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let diemthi = [8, 9.5, 7, 6.5, 10];
+  function findAvg(scores) {
+    if (scores.length === 0)
+      return 0;
+    let sum = 0;
+    for (let i = 0; i < scores.length; i++) {
+      sum += scores[i];
+    }
+    return sum / scores.length;
+  }
+  let diemTrungBinh = findAvg(diemthi);
+  document.write("Điểm trung bình là:", diemTrungBinh.toFixed(2))
+          </script>
+
+</body>
+</html>

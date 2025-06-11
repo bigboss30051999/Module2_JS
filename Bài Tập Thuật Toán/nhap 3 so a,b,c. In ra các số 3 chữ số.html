@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=+prompt("Nhap so a:")
+  let b=+prompt("Nhap so b:")
+  let c=+prompt("Nhap so c:")
+  let arr=[a,b,c];
+  let result=[]
+  for(let i=0;i<arr.length;i++) {
+    if(arr[i]===0)continue;
+    for(let j=0;j<arr.length;j++) {
+      for(let k=0;k<arr.length;k++) {
+        let item= ''+arr[i]+arr[j]+arr[k]
+        if (result.indexOf(item)===-1){
+          result.push(item)
+        }
+      }
+    }
+  }
+  document.write(result.join('<br>'))
+</script>
+</body>
+</html>

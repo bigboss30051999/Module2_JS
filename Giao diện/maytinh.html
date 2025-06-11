@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .calculator {
+            width: 260px;
+            margin: 30px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        #scr {
+            width: 100%;
+            height: 50px;
+            font-size: 22px;
+            text-align: right;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 16px;
+            background-color: #f1f3f4;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        button.equal {
+            background-color: #0b63f8;
+            color: white;
+        }
+
+        button.equal:hover {
+            background-color: #084ec1;
+        }
+    </style>
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="scr" value=""  />
+
+    <table>
+        <tr>
+            <td><button onclick="nhap('(')">(</button></td>
+            <td><button onclick="nhap(')')">)</button></td>
+            <td><button onclick="nhap('%')">%</button></td>
+            <td><button onclick="xoa()" >AC</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap('7')">7</button></td>
+            <td><button onclick="nhap('8')">8</button></td>
+            <td><button onclick="nhap('9')">9</button></td>
+            <td><button onclick="nhap('/')">÷</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap('4')">4</button></td>
+            <td><button onclick="nhap('5')">5</button></td>
+            <td><button onclick="nhap('6')">6</button></td>
+            <td><button onclick="nhap('*')">×</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap('1')">1</button></td>
+            <td><button onclick="nhap('2')">2</button></td>
+            <td><button onclick="nhap('3')">3</button></td>
+            <td><button onclick="nhap('-')">−</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="nhap('0')">0</button></td>
+            <td><button onclick="nhap('.')">.</button></td>
+            <td><button class="equal" onclick="tinh()">=</button></td>
+            <td><button onclick="nhap('-')">+</button></td>
+        </tr>
+    </table>
+</div>
+<script>
+    function tinh()
+    {
+        let str=document.getElementById("scr").value;
+        document.getElementById("scr").value=eval(str);
+    }
+    function xoa(){
+        document.getElementById("scr").value = "";
+    }
+    function nhap(x)
+    {
+        let str=document.getElementById("scr").value;
+        str+=x;
+        document.getElementById("scr").value=str;
+    }
+</script>
+</body>
+</html>

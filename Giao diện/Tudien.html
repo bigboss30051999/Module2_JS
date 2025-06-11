@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let eng = ['Cat', 'Dog', 'Elephant', 'Pig', 'Snake'];
+  let vie = ['Mèo', 'Chó', 'Voi', 'Lợn', 'Rắn'];
+
+  let input = prompt("Nhập từ tiếng Anh:"); // Nhập từ tiếng Anh từ người dùng
+  let index = eng.indexOf(input); // Tìm vị trí từ đó trong mảng eng
+
+  if (index !== -1) {
+    alert("Nghĩa tiếng Việt là: " + vie[index]);
+  } else {
+    alert("Không tìm thấy từ này trong từ điển.");
+  }
+
+</script>
+</body>
+</html>

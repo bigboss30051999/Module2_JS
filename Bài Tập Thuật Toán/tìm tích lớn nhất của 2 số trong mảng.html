@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [3, -4, -5, 6, 7,0];
+
+  let max1 = -Infinity, max2 = -Infinity;
+  let min1 = Infinity, min2 = Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max1) {
+      max2 = max1;
+      max1 = arr[i];
+    } else if (arr[i] > max2) {
+      max2 = arr[i];
+    }
+    if (arr[i] < min1) {
+      min2 = min1;
+      min1 = arr[i];
+    } else if (arr[i] < min2) {
+      min2 = arr[i];
+    }
+  }
+
+  let product1 = max1 * max2;
+  let product2 = min1 * min2;
+
+  if (product1 > product2) {
+    console.log(`Hai số có tích lớn nhất là ${max1} và ${max2}, tích = ${product1}`);
+  } else {
+    console.log(`Hai số có tích lớn nhất là ${min1} và ${min2}, tích = ${product2}`);
+  }
+
+</script>
+</body>
+</html>

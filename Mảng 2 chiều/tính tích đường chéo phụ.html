@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr2 = [
+    [1, 12, 3, 4],
+    [8, 7, 6, 5],
+    [9, 10, 11, 2],
+    [19, 20, 21, 22],
+  ]
+  let tich = 1;
+  for (let i = 0; i < arr2.length; i++) {
+    tich *= arr2[i][arr2.length-1-i];
+  }
+  document.write("Tích của đường chéo phụ của ma trận là:"+tich);
+</script>
+</body>
+</html>

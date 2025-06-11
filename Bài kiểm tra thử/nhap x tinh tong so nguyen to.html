@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let x = +prompt("nhap x:");
+  function isPrime(n) {
+    for (let i = 2; i <=  Math.sqrt(n); i++) {
+      if (n % i === 0) return false;
+    }
+    return true;
+  }
+
+  function sumOfListPrime(x) {
+    let sum = 0;
+    for (let i = 2; i <= x; i++) {
+      if (isPrime(i)===true) {
+        sum += i;
+      }
+    }
+    return sum;
+  }
+  document.write("Tổng các số nguyên tố từ 0 đến " , x,  " là: ", sumOfListPrime(x));
+</script>
+</body>
+</html>

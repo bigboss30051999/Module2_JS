@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let soNhom1 = +prompt('Nhập số nhóm 1 người: ');
+  let soNhom2 = +prompt('Nhập số nhóm 2 người: ');
+  let soNhom3 = +prompt('Nhập số nhóm 3 người: ');
+  let soNhom4 = +prompt('Nhập số nhóm 4 người : ');
+  let soBanh = soNhom4 + soNhom3;
+  let soNhom1ConLai = 0;
+  if (soNhom3 < soNhom1) {
+    soNhom1ConLai = soNhom1 - soNhom3;
+  }
+  soBanh += Math.ceil((soNhom1ConLai + soNhom2*2)/4);
+  alert(soBanh)
+</script>
+</body>
+</html>

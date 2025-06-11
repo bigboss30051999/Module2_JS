@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình chữ nhật</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="500" height="300"></canvas>
+
+<script>
+    class Rectangle {
+        constructor(x, y, width, height, color) {
+            this.x = x;             // Toạ độ x
+            this.y = y;             // Toạ độ y
+            this.width = width;     // Chiều dài
+            this.height = height;   // Chiều rộng
+            this.color = color;     // Màu sắc (mã hex)
+        }
+
+        render(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = this.color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+        }
+    }
+
+    // Tạo canvas
+    const canvas = document.getElementById('myCanvas');
+
+    // Tạo hình chữ nhật
+    const rect = new Rectangle(50, 60, 200, 100, '#FF5733');
+    rect.render(canvas);  // Hiển thị lên canvas
+</script>
+
+</body>
+</html>

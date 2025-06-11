@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n=+prompt("Nhập vào số lượng phần tử trong màng:")
+  let arr = [];
+  for (let i=0;i<n;i++){
+    let pt=+prompt('Nhập phần tử thứ: '+ i + ':')
+    arr.push(pt)
+  }
+  document.write('Các phần tử trong mảng là: '+arr+'<br>')
+  let x=+prompt('Nhập vào phần tử cần tìm:')
+  let vitriX=arr.indexOf(x)
+  for (let i=0;i<arr.length;i++){
+    if (arr[i]===x){
+      vitriX=i
+      break;
+    }
+  }
+  document.write('Phần tử cần tìm nằm ở vị trí thứ: '+vitriX)
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n= +prompt('nhập dẫy số nguyên tố:')
+  let dem=0
+  let so=2
+  while (dem<=n) {
+let kq="Là số nguyên tố "
+    for (let i=2;i<so;i++)
+    {
+      if (so%i===0){
+        kq='Không phải là số nguyên tố '
+        break
+      }
+    }
+    if (kq=='Là số nguyên tố ')
+    {
+    document.write(so+"<br>")
+      dem++
+    }
+    so++
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let soNam = +prompt("Nhập số Nam");
+let soNu = +prompt("Nhập số Nữ");
+let capNamNu = 0;
+let capDongTinh = Math.floor(Math.abs((soNam)-(soNu))/2);
+if(soNam > soNu){
+capNamNu = soNu
+}else
+(capNamNu =soNam);
+console.log("Số cặp Nam Nữ là: "+capNamNu+","+"Số cặp đồng tính là: "+capDongTinh)
+</script>
+</body>
+</html>

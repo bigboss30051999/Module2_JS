@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập a:");
+    let b = +prompt("Nhập b:");
+    tich=1;
+    tong=0;
+    for (let i = a; i <= b; i++) {
+        if(i%2==0) {
+            tich*=i;
+        }
+        if(i%2!==0) {
+            tong+=i;
+        }
+    }
+    alert('Tích các số chẳn là:'+ tich)
+alert('Tổng các số lẻ là:'+tong)
+</script>
+</body>
+</html>

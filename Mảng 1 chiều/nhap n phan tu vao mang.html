@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //nhap n phan tu vao mang
+  //cho den khi nhap vao -1 thì dừng lại và tính tổng
+  let n=+prompt("Nhập vào số lượng phần tử trong màng:")
+  let arr = [];
+  let sum=0;
+  for (let i=0;i<n;i++){
+    let x=+prompt('Nhập phần tử thứ: '+ i + ':')
+    if (x===-1){
+      break;
+    }
+    arr.push(x)
+    sum+=x;
+  }
+  document.write('Tổng của các phần tử trong mản là: '+sum)
+  // nhap vao phan tử x và tìm vị trí phần tử đó
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ball move</title>
+</head>
+<body>
+<img src="img/ball.png" id="ball" alt="" style="width: 100px; position: absolute; top: 50px; left: 50px ; right: 100px">
+<script>
+    let tocdoX = 2;
+    let tocdoY = 2;
+   setInterval(() => {
+       let left= document.getElementById('ball').style.left;
+       let top= document.getElementById('ball').style.top;
+        left=parseInt(left);
+        top=parseInt(top);
+       if (left >= window.innerWidth -100) {
+           tocdoX=-2;
+       }
+       if (left <= 0) {
+           tocdoX= 2;
+       }
+       if (top >= window.innerHeight -100) {
+           tocdoY= -2;
+       }
+       if (top <= 0) {
+           tocdoY= 2;
+       }
+       left+= tocdoX;
+       top+= tocdoY;
+        document.getElementById('ball').style.left= left+'px';
+        document.getElementById('ball').style.top= top +'px';
+        },1)
+
+
+
+</script>
+</body>
+</html>

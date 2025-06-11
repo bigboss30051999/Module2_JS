@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function kiemTraMangTangDan(arr) {
+    for (let i = 0; i < arr.length-1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+  let arr = [1, 2, 3];
+  if (kiemTraMangTangDan(arr)===true) {
+    document.write("Mảng tăng dần");
+  } else {
+    document.write("Mảng không tăng dần");
+  }
+</script>
+</body>
+</html>

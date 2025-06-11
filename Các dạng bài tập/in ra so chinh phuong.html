@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a= +prompt("Nhập a:")
+  let b= +prompt("Nhập b:")
+  for (let i=a; i<=b; i++) {
+    if (Math.sqrt(i)%1==0) {
+      document.write(i +" là số chính phương<br>")
+    }
+  }
+  //code tối ưu
+  document.write("<hr>")
+  a=Math.ceil(Math.sqrt(a));
+  b=Math.floor(Math.sqrt(b));
+  for (let i=a; i<=b; i++) {
+    document.write(i*i+" là số chính phương<br> ")
+  }
+</script>
+</body>
+</html>

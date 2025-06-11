@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arr = [1, 2, 3, 2, 1, 4, 2, 3, 1];
+let count = {};
+for (let i = 0; i < arr.length; i++) {
+if (count[arr[i]]) {
+count[arr[i]]++;
+} else {
+count[arr[i]] = 1;
+}
+}
+for (let key in count) {
+    document.write(`Phần tử ${key} xuất hiện ${count[key]} lần` + '<br>');
+}
+</script>
+</body>
+</html>

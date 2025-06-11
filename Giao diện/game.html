@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ai Là Triệu Phú</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1b2a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #game-container {
+      width: 600px;
+      background: #1b263b;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #00b4d8;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #fca311;
+    }
+
+    .question {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .answers {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .answer-btn {
+      padding: 15px;
+      font-size: 16px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .answer-btn:hover {
+      background-color: #0096c7;
+    }
+
+    .correct {
+      background-color: #2ecc71 !important;
+    }
+
+    .wrong {
+      background-color: #e74c3c !important;
+    }
+
+    .result {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="game-container">
+  <h1>🎓 Ai Là Triệu Phú</h1>
+  <div class="question" id="question"></div>
+  <div class="answers" id="answers"></div>
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+  const questions = [
+    {
+      question: "1. Thủ đô của Việt Nam là?",
+      answers: ["Đà Nẵng", "Hà Nội", "Hải Phòng", "TP. Hồ Chí Minh"],
+      correct: 1
+    },
+    {
+      question: "2. Ai là người sáng lập Apple?",
+      answers: ["Elon Musk", "Steve Jobs", "Mark Zuckerberg", "Bill Gates"],
+      correct: 1
+    },
+    {
+      question: "3. HTML là gì?",
+      answers: ["Ngôn ngữ lập trình", "Trình duyệt", "Ngôn ngữ đánh dấu", "Cơ sở dữ liệu"],
+      correct: 2
+    }
+  ];
+
+  let current = 0;
+
+  function renderQuestion() {
+    const q = questions[current];
+    document.getElementById("question").innerText = q.question;
+    const answersDiv = document.getElementById("answers");
+    answersDiv.innerHTML = "";
+    document.getElementById("result").innerText = "";
+
+    q.answers.forEach((ans, i) => {
+      const btn = document.createElement("button");
+      btn.classList.add("answer-btn");
+      btn.innerText = ans;
+      btn.onclick = () => handleAnswer(i, btn);
+      answersDiv.appendChild(btn);
+    });
+  }
+
+  function handleAnswer(index, btn) {
+    const q = questions[current];
+    const allButtons = document.querySelectorAll(".answer-btn");
+
+    allButtons.forEach(b => b.disabled = true);
+
+    if (index === q.correct) {
+      btn.classList.add("correct");
+      setTimeout(() => {
+        current++;
+        if (current < questions.length) {
+          renderQuestion();
+        } else {
+          document.getElementById("game-container").innerHTML =
+                  "<h2>🎉 Bạn đã trở thành TRIỆU PHÚ!</h2>";
+        }
+      }, 1000);
+    } else {
+      btn.classList.add("wrong");
+      allButtons[q.correct].classList.add("correct");
+      document.getElementById("result").innerText = "❌ Trả lời sai! Trò chơi kết thúc.";
+    }
+  }
+
+  renderQuestion();
+</script>
+</body>
+</html>
