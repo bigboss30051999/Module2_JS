@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+//aaaaaaaaaaaaaaaaaaaa
+/////////////////aaaâgipbcdaaaaaaaaaa
+<script>
+    class Rectangle {
+        constructor(x, y, width, height, color) {
+            this.x = x;             // Toạ độ x
+            this.y = y;             // Toạ độ y
+            this.width = width;     // Chiều dài
+            this.height = height;   // Chiều rộng
+            this.color = color;     // Màu sắc (mã hex)
+        }
+        chuvi() {
+            return (this.width+this.height)*2
+        }
+        dientich() {
+            return this.width*this.height
+        }
+    }
+    let hcn= new Rectangle(100,200,300,400,'BLUE')
+    document.write('Chu vi HCN là:'+hcn.chuvi())
+    document.write('Diện tích HCN là: '+hcn.dientich())
+</script>
+</body>
+</html>

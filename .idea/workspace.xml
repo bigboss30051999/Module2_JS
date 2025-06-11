@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="81b99712-c8ef-4812-b7da-b9aa26375b10" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/dem so lan xuat hien cac phan tư trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/in ra phan tu xuat hien 1 lan trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/kiểm tra mang tang dan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/kiểm tra mảng a có trong mảng b không.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/liệt kê các vị trí có giá trị âm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/nhap 3 so a,b,c. In ra các số 3 chữ số.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/tìm max thứ 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài Tập Thuật Toán/tìm tích lớn nhất của 2 số trong mảng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài kiểm tra thử/dsdiemthi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài kiểm tra thử/hinhchunhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bài kiểm tra thử/nhap x tinh tong so nguyen to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/baitoanchiabanhchung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Các dạng bài tập/baitoanghepdoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giao diện/Tudien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giao diện/game.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giao diện/maytinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hàm/Ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/Ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/nhap n phan tu vao mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/nhapvatimsophantutrongmang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 1 chiều/tim va xoa phan tu trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 2 chiều/nhap vao a va tim vi tri cua a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 2 chiều/tinh tong duong cheo chinh của ma tran.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mảng 2 chiều/tính tích đường chéo phụ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/Dientichhinhtron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Quản Lý Sản Phẩm/QLSP.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Số Nguyên Tố và fibonacy/in dãy fibonacy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Số Nguyên Tố và fibonacy/in ra dãy số nguyên tố.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP/DientichvachuviHCN.html" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/DientichvachuviHCN.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2wlZ30AdRsRsN4IFp0qhYGsdcZk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.nhap n phan tu vao mang.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Huynh Vinh Xuyen\WebstormProjects\JS\Giao diện" />
+      <recent name="C:\Users\Huynh Vinh Xuyen\WebstormProjects\JS\Các dạng bài tập" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81b99712-c8ef-4812-b7da-b9aa26375b10" name="Changes" comment="" />
+      <created>1746617917723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746617917723</updated>
+      <workItem from="1746617918742" duration="228000" />
+      <workItem from="1746618256985" duration="8500000" />
+      <workItem from="1746790257396" duration="8935000" />
+      <workItem from="1747049350452" duration="9826000" />
+      <workItem from="1747312794011" duration="5748000" />
+      <workItem from="1747394901482" duration="7293000" />
+      <workItem from="1747651046803" duration="596000" />
+      <workItem from="1747651702137" duration="4660000" />
+      <workItem from="1747658683877" duration="3697000" />
+      <workItem from="1747828211355" duration="629000" />
+      <workItem from="1747829260342" duration="6582000" />
+      <workItem from="1747999731564" duration="381000" />
+      <workItem from="1748066970674" duration="15000" />
+      <workItem from="1748068716506" duration="2930000" />
+      <workItem from="1748143926686" duration="4001000" />
+      <workItem from="1748148144062" duration="1535000" />
+      <workItem from="1748259382947" duration="2233000" />
+      <workItem from="1748261910953" duration="6570000" />
+      <workItem from="1748430712153" duration="6138000" />
+      <workItem from="1748440218247" duration="563000" />
+      <workItem from="1748778183309" duration="3055000" />
+      <workItem from="1748863453595" duration="2149000" />
+      <workItem from="1748869277841" duration="223000" />
+      <workItem from="1749038445057" duration="5163000" />
+      <workItem from="1749209911971" duration="6294000" />
+      <workItem from="1749468846600" duration="4415000" />
+      <workItem from="1749473863893" duration="4201000" />
+      <workItem from="1749641487106" duration="6632000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
