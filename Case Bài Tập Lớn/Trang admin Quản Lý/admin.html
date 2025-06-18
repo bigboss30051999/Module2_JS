@@ -11,7 +11,7 @@
 <body>
 <div class="app">
   <nav class="sidebar">
-    <h3 class="logo">Coffeeshop</h3>
+    <h3 class="logo">Coffee Say Hi</h3>
     <ul>
       <li onclick="showView('home')">Trang chủ</li>
       <li onclick="showView('menu')">Quản lý Menu</li>
@@ -51,7 +51,7 @@
         <table class="table mt-3">
           <thead>
           <tr>
-            <th>#</th>
+            <th>STT</th>
             <th>Tên món</th>
             <th>Giá (VNĐ)</th>
             <th>Hành động</th>
@@ -66,9 +66,15 @@
 </div>
 <script>
   function showView(viewId) {
-    document.getElementById('homeView').style.display = viewId === 'home' ? 'block' : 'none';
-    document.getElementById('menuView').style.display = viewId === 'menu' ? 'block' : 'none';
+    if (viewId === 'home') {
+      document.getElementById('homeView').style.display = 'block';
+      document.getElementById('menuView').style.display = 'none';
+    } else if (viewId === 'menu') {
+      document.getElementById('homeView').style.display = 'none';
+      document.getElementById('menuView').style.display = 'block';
+    }
   }
+
   class MenuItem {
     constructor(name, price) {
       this.name = name;
