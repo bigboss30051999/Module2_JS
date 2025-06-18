@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang chủ - CoffeeShop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="app">
+  <nav class="sidebar">
+    <h3 class="logo">Coffeeshop</h3>
+    <ul>
+      <li onclick="showView('home')">Trang chủ</li>
+      <li onclick="showView('menu')">Quản lý Menu</li>
+    </ul>
+  </nav>
+  <div class="main">
+    <header class="topbar d-flex justify-content-end align-items-center px-4 py-2">
+      <div>
+        <strong>Quản lý: Huỳnh Vĩnh Xuyên</strong><br>
+      </div>
+    </header>
+    <div class="content p-4">
+      <div id="homeView">
+        <h2>Trang chủ</h2>
+        <hr>
+        <div class="row g-3 mt-3">
+          <div class="col-md-3">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h5>Quản lý Menu</h5>
+                <button class="btn btn-light btn-sm mt-2" onclick="showView('menu')">Xem chi tiết &raquo;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menuView" style="display: none;">
+        <h2>Quản lý Menu</h2>
+        <div class="form-group d-flex gap-2 mt-3">
+          <input type="text" id="name" placeholder="Tên món..." class="form-control">
+          <input type="number" id="price" placeholder="Giá..." class="form-control">
+          <button class="btn btn-success" onclick="menuManager.addItem()">Thêm món</button>
+        </div>
+        <div class="form-group mt-2">
+          <input type="text" id="search" placeholder="Nhập tên món ăn" class=""><button class="btn btn-success" onclick="menuManager.searchItem()">Tìm món</button>
+        </div>
+        <table class="table mt-3">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Tên món</th>
+            <th>Giá (VNĐ)</th>
+            <th>Hành động</th>
+          </tr>
+          </thead>
+          <tbody id="menuTable">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function showView(viewId) {
+    document.getElementById('homeView').style.display = viewId === 'home' ? 'block' : 'none';
+    document.getElementById('menuView').style.display = viewId === 'menu' ? 'block' : 'none';
+  }
+  class MenuItem {
+    constructor(name, price) {
+      this.name = name;
+      this.price = price;
+    }
+  }
+
+  class MenuManager {
+    constructor() {
+      this.menuList = JSON.parse(localStorage.getItem('menu')) || [];
+      this.render();
+    }
+
+    saveToStorage() {
+      localStorage.setItem('menu', JSON.stringify(this.menuList));
+    }
+
+    addItem() {
+      let name = document.getElementById('name').value.trim();
+      let price = parseFloat(document.getElementById('price').value);
+      if (!name || isNaN(price) || price <= 0) {
+        alert("Vui lòng nhập đầy đủ tên món và giá.");
+        return;
+      }
+      this.menuList.push(new MenuItem(name, price));
+      this.saveToStorage();
+      this.render();
+      document.getElementById('name').value = '';
+      document.getElementById('price').value = '';
+    }
+
+    deleteItem(index) {
+      if (confirm("Xóa món này?")) {
+        this.menuList.splice(index, 1);
+        this.saveToStorage();
+        this.render();
+      }
+    }
+    editItem(index) {
+      const newName = prompt("Nhập tên mới:", this.menuList[index].name);
+      const newPrice = prompt("Nhập giá mới:", this.menuList[index].price);
+      if (newName && !isNaN(newPrice)) {
+        this.menuList[index].name = newName.trim();
+        this.menuList[index].price = parseFloat(newPrice);
+        this.saveToStorage();
+        this.render();
+      }
+    }
+
+    searchItem() {
+      const keyword = document.getElementById('search').value.toLowerCase();
+      const rows = document.querySelectorAll('#menuTable tr');
+      rows.forEach(row => {
+        const nameCell = row.children[1];
+        if (nameCell) {
+          const visible = nameCell.textContent.toLowerCase().includes(keyword);
+          row.style.display = visible ? '' : 'none';
+        }
+      });
+    }
+
+    render() {
+      const table = document.getElementById('menuTable');
+      table.innerHTML = '';
+      this.menuList.forEach((item, index) => {
+        table.innerHTML += `
+        <tr>
+          <td>${index + 1}</td>
+          <td>${item.name}</td>
+          <td>${item.price.toLocaleString()}</td>
+          <td>
+            <button class="btn btn-sm btn-warning" onclick="menuManager.editItem(${index})">Sửa</button>
+            <button class="btn btn-sm btn-danger" onclick="menuManager.deleteItem(${index})">Xóa</button>
+          </td>
+        </tr>
+      `;
+      });
+    }
+  }
+  const menuManager = new MenuManager();
+</script>
+</body>
+</html>
