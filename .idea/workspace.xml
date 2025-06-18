@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81b99712-c8ef-4812-b7da-b9aa26375b10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Game Ai là Triệu Phú/Game AI La TRieu Phu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Game Ai là Triệu Phú/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Game Ai là Triệu Phú/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Trang admin Quản Lý/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Trang admin Quản Lý/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Trang admin Quản Lý/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case Bài Tập Lớn/Trang admin Quản Lý/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case Bài Tập Lớn/Game Ai là Triệu Phú/Game AI La TRieu Phu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case Bài Tập Lớn/Game Ai là Triệu Phú/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case Bài Tập Lớn/Game Ai là Triệu Phú/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +124,7 @@
       <workItem from="1749730907693" duration="1158000" />
       <workItem from="1750074299264" duration="688000" />
       <workItem from="1750075309331" duration="5120000" />
-      <workItem from="1750246483480" duration="2810000" />
+      <workItem from="1750246483480" duration="3625000" />
     </task>
     <servers />
   </component>
